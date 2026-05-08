@@ -2,13 +2,13 @@
 
 Sistem microservices sederhana yang dibangun menggunakan **Spring Boot 4 (Java 17)** untuk transaksi sederhana. Sistem ini dirancang untuk berjalan secara Containerization menggunakan **Docker** dan **PostgreSQL**.
 
-## 🚀 Fitur Utama
+## Fitur Utama
 - **Product Service**: Handle Product (Get Product, Check Stock, Reduce Stock).
 - **Transaction Service**: Proses transaksi yang terintegrasi dengan ketersediaan stok di Product Service.
 - **Database Per Service**: Setiap service memiliki database PostgreSQL tersendiri (`product_db` dan `trx_db`) untuk menjaga independensi data.
 - **Dockerized**: Seluruh ekosistem dapat dijalankan dengan satu perintah.
 
-## 🛠️ Tech Stack
+## Tech Stack
 - **Backend**: Java 17, Spring Boot 4
 - **ORM**: Spring Data JPA (Hibernate)
 - **Database**: PostgreSQL 15
