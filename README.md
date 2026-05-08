@@ -24,22 +24,22 @@ Pastikan perangkat Anda sudah terinstal:
 
 1. **Clone Repository**
    ```bash
-   git clone [https://github.com/Leeroyakbar/payment-trx-system.git](https://github.com/Leeroyakbar/payment-trx-system.git)
+   git clone https://github.com/Leeroyakbar/payment-trx-system.git
    cd payment-trx-system
 
 2. Persiapan Environment
-Buat file bernama `.env` di direktori utama proyek (sejajar dengan `docker-compose.yaml`). Gunakan template berikut:
+   Buat file bernama `.env` di direktori utama proyek (sejajar dengan `docker-compose.yaml`). Gunakan template berikut:
 
-```env
-DB_USER=postgres
-DB_PASSWORD=ex
+   ```env
+      DB_USER=postgres
+      DB_PASSWORD=ex
 
-PRODUCT_DB_NAME=product_db
-TRX_DB_NAME=trx_db
+      PRODUCT_DB_NAME=product_db
+      TRX_DB_NAME=trx_db
 
 # Hostname menggunakan nama service di Docker Compose
 PRODUCT_SERVICE_URL=http://product-service:8081/api/v1/products
 
 3. Menjalankan Sistem
-```bash
-   docker-compose up --build
+   ```bash
+      docker-compose up --build
