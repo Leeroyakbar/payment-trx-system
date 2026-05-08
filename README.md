@@ -37,8 +37,8 @@ Pastikan perangkat Anda sudah terinstal:
       PRODUCT_DB_NAME=product_db
       TRX_DB_NAME=trx_db
 
-### Hostname menggunakan nama service di Docker Compose
-PRODUCT_SERVICE_URL=http://product-service:8081/api/v1/products
+      PRODUCT_SERVICE_URL=http://product-service:8081/api/v1/products
+
 
 3. Menjalankan Sistem
    ```bash
